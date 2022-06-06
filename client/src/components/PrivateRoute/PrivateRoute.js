@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import Landing1 from "../Landing/Landing2";
+//import Landing1 from "../Landing/Landing2";
 import Landing from "../Landing";
 import Loader from "../Sheared/Loader"
 const PrivateRoute = ({ history }) => {

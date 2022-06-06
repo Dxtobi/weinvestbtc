@@ -43,10 +43,10 @@ export default function Footer() {
       </div>
 
       <div className='footer_contact_soc'>
-        <a href='https://www.facebook.com/We-Invest-Btc-105595135514513/' target='_blank' className='footer_soc_a'><AiFillFacebook /></a>
-        <a href='https://instagram.com/weinvestbtc?r=nametag' target='_blank' className='footer_soc_a'><AiFillInstagram /></a>
-        <a href='https://wa.me/message/LESMPJVUPE3OB1' target='_blank' className='footer_soc_a'><AiOutlineWhatsApp /></a>
-        <a href='https://t.me/weinvestbitcoin' target='_blank' className='footer_soc_a'><FaTelegramPlane/></a>
+        <a href='https://www.facebook.com/We-Invest-Btc-105595135514513/' target='_blank' rel="noreferrer" className='footer_soc_a'><AiFillFacebook /></a>
+        <a href='https://instagram.com/weinvestbtc?r=nametag' target='_blank' rel="noreferrer" className='footer_soc_a'><AiFillInstagram /></a>
+        <a href='https://wa.me/message/LESMPJVUPE3OB1' target='_blank' rel="noreferrer" className='footer_soc_a'><AiOutlineWhatsApp /></a>
+        <a href='https://t.me/weinvestbitcoin' target='_blank' rel="noreferrer" className='footer_soc_a'><FaTelegramPlane/></a>
       </div>
 
       

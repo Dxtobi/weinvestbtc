@@ -94,7 +94,7 @@ export const Component = () => {
             <Rerousel itemRef={customerLogo}>
                 {info_about.map((c, i) => {
                     
-                    return <div key={i} ref={customerLogo} className='cd-div-con-f'><Info_foot  indx={i} text={c.text} img={c.ui} h={c.h} u={c.n} /></div>;
+                    return <div key={i} ref={customerLogo} className='cd-div-con-f'><InfoPoot  indx={i} text={c.text} img={c.ui} h={c.h} u={c.n} /></div>;
                 })}
             </Rerousel>
         </div>
@@ -112,7 +112,7 @@ const Ci = ({ text, img, indx }) => {
 
 
 
-    const Info_foot = ({ text, img,u,h }) => {
+    const InfoPoot = ({ text, img,u,h }) => {
         //console.log(indx)
             return (
                 <div className={'ci-div-f'}>

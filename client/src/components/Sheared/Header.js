@@ -27,6 +27,7 @@ const Header = () => {
       try {
         const { data } = await axios.get("/api/private-route", config);
         setPrivateInfo(data.data);
+       
       } catch (error) {
         localStorage.removeItem("authToken");
         setError("Authorization Invoked please login to continue");
@@ -38,6 +39,7 @@ const Header = () => {
 
   
   const handleOnClick = () => {
+    console.log(privateInfo)
     toggle()
     localStorage.removeItem("authToken");
 
