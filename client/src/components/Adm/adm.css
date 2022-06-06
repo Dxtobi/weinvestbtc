@@ -1,0 +1,20 @@
+
+
+button.adm-confirm-button {
+    padding: 5px;
+    border-radius: 50px;
+    width: 40%;
+    border: none;
+    background: gray;
+    color: white;
+    cursor: pointer;
+}
+
+.adm-confirm-menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.Adm {
+    padding: 20px 0px;
+}

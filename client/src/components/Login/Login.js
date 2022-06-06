@@ -11,7 +11,7 @@ const Login = ({ history }) => {
 
   useEffect(() => {
     if (localStorage.getItem("authToken")) {
-      history.push("/");
+      history.push("/dashboard");
     }
   }, [history]);
 
@@ -41,7 +41,8 @@ const Login = ({ history }) => {
         config
       );
       localStorage.setItem("authToken", data.token);
-      history.push("/");
+      history.push("/dashboard");
+      window.location.reload()
     } catch (error) {
       setError(error.response.data.error);
       setTimeout(() => {
@@ -54,7 +55,7 @@ const Login = ({ history }) => {
     <>
       <div className="login">
         <form onSubmit={handleSubmit} className="login__form">
-          <h3 className="login__title">Login form</h3>
+          <h3 className="login__title">SIGN IN</h3>
           {error && <span className="error-message">{error}</span>}
 
           {/* Email */}

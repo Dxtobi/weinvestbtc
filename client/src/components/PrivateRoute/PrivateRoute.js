@@ -1,11 +1,18 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-
+import Landing1 from "../Landing/Landing2";
 import Landing from "../Landing";
-
+import Loader from "../Sheared/Loader"
 const PrivateRoute = ({ history }) => {
   const [error, setError] = useState("");
   const [privateInfo, setPrivateInfo] = useState("");
+  const [loading, setLoading] = useState(true);
+  
+  useEffect(() => {
+    setTimeout(() => {
+      setLoading(false);
+    }, 1000);
+  }, []);
 
   useEffect(() => {
     const fetchingPrivateInfos = async () => {
@@ -36,8 +43,11 @@ const PrivateRoute = ({ history }) => {
     history.push("/login");
   };
 
+  if (loading) {
+    return <Loader/>
+  }
   return error ? (
-    <span className="error-message">{error}</span>
+    <Landing />
   ) : (
     <>
       {/* <div style={{ background: "green", color: "white" }}>{privateInfo}</div> */}

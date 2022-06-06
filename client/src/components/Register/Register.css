@@ -3,20 +3,18 @@
   height: 100vh;
   display: flex;
   justify-content: center;
-  align-items: center;
-  background: url("../../assets/landing.jpg") no-repeat top fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+  align-items: flex-start;
+  
 }
 
 .register__form {
-  width: 380px;
+  width: 90%;
   padding: 1.5rem;
-  box-shadow: 0 1rem 2rem rgba(27, 26, 26, 1.2);
-  background: rgb(167, 240, 193);
-  border-radius: 30px;
+ 
+  background: rgba(0, 0, 0, 0.554);
+  border-radius: 13px;
+  color: white;
+  margin-top: 30%;
 }
 
 .register__title {

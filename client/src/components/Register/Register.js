@@ -13,7 +13,7 @@ const Register = ({ history }) => {
 
   useEffect(() => {
     if (localStorage.getItem("authToken")) {
-      history.push("/");
+      history.push("/login");
     }
   }, [history]);
 
@@ -34,7 +34,7 @@ const Register = ({ history }) => {
       return setError("Password Did not matched");
     }
     try {
-      const { data } = await axios.post(
+     await axios.post(
         "/api/auth/register",
         {
           username,
@@ -43,8 +43,8 @@ const Register = ({ history }) => {
         },
         config
       );
-      localStorage.setItem("authToken", data.token);
-      history.push("/");
+     // localStorage.setItem("authToken", data.token);
+      history.push("/login");
     } catch (error) {
       setError(error.response.data.error);
       setTimeout(() => {
@@ -55,19 +55,19 @@ const Register = ({ history }) => {
 
   return (
     <>
-      <div className="register">
+      <div className="register bg-shadows">
         <form onSubmit={handleSubmit} className="register__form">
-          <h3 className="register__title">Registartion form</h3>
+          <h3 className="register__title">SIGN UP</h3>
           {error && <span className="error-message">{error}</span>}
 
           {/* Username */}
           <div className="form-group">
-            <label htmlFor="name">Username: </label>
+            <label htmlFor="name">Full name: </label>
             <input
               type="text"
               required
               id="name"
-              placeholder="Username"
+              placeholder="full name"
               value={username}
               onChange={(event) => setUsername(event.target.value)}
             />

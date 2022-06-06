@@ -1,5 +1,5 @@
 require("dotenv").config({ path: "./configuration.env" });
-
+require("dotenv").config()
 const express = require("express");
 
 const redirect = require("./routes/auth.js");

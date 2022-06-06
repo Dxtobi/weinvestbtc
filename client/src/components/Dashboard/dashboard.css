@@ -1,0 +1,276 @@
+
+
+
+
+.dashboard {
+    padding: 20px;
+    width: 100%;
+    margin: auto;
+}
+
+.d-top {
+    padding: 10px;
+   
+    color: white;
+    border-radius: 10px;
+    box-shadow: -1px 15px 20px -5px #000000a1;
+    background-color: #000000ec;
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200' viewBox='0 0 200 200'%3E%3Cg %3E%3Cpolygon fill='%23030302' points='100 57.1 64 93.1 71.5 100.6 100 72.1'/%3E%3Cpolygon fill='%23030302' points='100 57.1 100 72.1 128.6 100.6 136.1 93.1'/%3E%3Cpolygon fill='%23030302' points='100 163.2 100 178.2 170.7 107.5 170.8 92.4'/%3E%3Cpolygon fill='%23030302' points='100 163.2 29.2 92.5 29.2 107.5 100 178.2'/%3E%3Cpath fill='%23040403' d='M100 21.8L29.2 92.5l70.7 70.7l70.7-70.7L100 21.8z M100 127.9L64.6 92.5L100 57.1l35.4 35.4L100 127.9z'/%3E%3Cpolygon fill='%23070706' points='0 157.1 0 172.1 28.6 200.6 36.1 193.1'/%3E%3Cpolygon fill='%23090908' points='70.7 200 70.8 192.4 63.2 200'/%3E%3Cpolygon fill='%230A0A09' points='27.8 200 63.2 200 70.7 192.5 0 121.8 0 157.2 35.3 192.5'/%3E%3Cpolygon fill='%23090908' points='200 157.1 164 193.1 171.5 200.6 200 172.1'/%3E%3Cpolygon fill='%23070706' points='136.7 200 129.2 192.5 129.2 200'/%3E%3Cpolygon fill='%230A0A09' points='172.1 200 164.6 192.5 200 157.1 200 157.2 200 121.8 200 121.8 129.2 192.5 136.7 200'/%3E%3Cpolygon fill='%23070706' points='129.2 0 129.2 7.5 200 78.2 200 63.2 136.7 0'/%3E%3Cpolygon fill='%230A0A09' points='200 27.8 200 27.9 172.1 0 136.7 0 200 63.2 200 63.2'/%3E%3Cpolygon fill='%23090908' points='63.2 0 0 63.2 0 78.2 70.7 7.5 70.7 0'/%3E%3Cpolygon fill='%230A0A09' points='0 63.2 63.2 0 27.8 0 0 27.8'/%3E%3C/g%3E%3C/svg%3E");
+}
+.d-to-sec-top {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.d-name small{
+color: gray;
+
+}
+.d-to-sec-top-c-s {
+    font-weight: bold;
+   
+}
+.d-to-sec-bott-c-s {
+   
+    font-family: 'Pacifico', cursive;
+}
+.d-to-sec-bott-c-s {
+    display: flex;
+    margin-top: 41px;
+    flex-direction: column;
+}
+
+.d-name {
+    
+    margin-bottom: 20px;
+    font-size: larger;
+    font-weight: bolder;
+    text-transform: capitalize;
+}
+
+.db-btn-sec {
+    margin: 36px auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+button.db-deposit {
+    padding: 10px;
+    width: 45%;
+    border: none;
+    background: green;
+    color: white;
+    border-radius: 4px;
+    outline: none;
+    cursor: pointer;
+}
+
+button.db-withdraw {
+    padding: 10px;
+    width: 45%;
+    border: none;
+    background: #ca6611;
+    color: white;
+    border-radius: 4px;
+    outline: none;
+    cursor: pointer;
+}
+
+.db-trans-i {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    justify-content: space-between;
+    border: 1px solid green;
+    border-radius: 10px;
+    margin: 11px auto;
+}
+.db-trans-p {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    justify-content: space-between;
+    border: 1px solid rgb(128, 73, 0);
+    border-radius: 10px;
+}
+.db-trans-i-r {
+    font-size: large;
+}
+.db-trans-i-l-t {
+  
+    font-weight: bold;
+}
+.db-trans-i-l-d {
+    font-size: small;
+    color: gray;
+}
+.db-trans-i-l {
+    display: flex;
+    align-items: center;
+}
+.db-recent {
+    margin: 20px 0px;
+    font-weight: 800;
+}
+.db-trans-i-l-td {
+    margin-left: 18px;
+    
+}
+.db-btc_address-details {
+    width: 100%;
+    text-align: center;
+    text-transform: capitalize;
+    font-size: small;
+    margin-bottom: 30px;
+}
+.db-deposit-menu {
+    position: fixed;
+    height: 150vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    color: white;
+    background: #000000e8;
+    padding: 20px;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    right: 0;
+}
+
+
+
+
+.db-deposit-menu-main {
+    
+    margin:21px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #f7f7f7f7;
+    color: black;
+    padding: 20px;
+    left: 0;
+    right: 0;
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0px 6px 20px -10px #00000082;
+}
+svg.db-menu-icon {
+    font-size: xx-large;
+    cursor: pointer;
+}
+.db-btc_address {
+    overflow-y: hidden; /* Hide vertical scrollbar */
+    overflow-x: hidden;
+
+    border: 1px solid #059418;
+    color: #059418;
+    padding: 20px;
+    border-radius: 10px;
+    font-size: xx-small;
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none; 
+    cursor: pointer;
+    margin-bottom: 10px;
+    
+}
+
+.db-btc_address:hover {
+   background-color: #059418;
+   color: white;
+}
+
+
+.db-btc_address ::-webkit-scrollbar { 
+    display: none;  /* Safari and Chrome */
+}
+input.db-enter-amount {
+    margin: 20px auto;
+    width: 70%;
+    padding: 10px;
+    outline: none;
+    border-radius: 10px;
+    border: 1px solid green;
+    background: #f0f0f0;
+}
+.db-deposit-menu-toast {
+    position: fixed;
+    top: 30%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 30%;
+    text-align: center;
+    background: green;
+    padding: 3px;
+    border-radius: 50px;
+}
+button.db-btc-sent {
+    padding: 10px 20px;
+    margin: 10px 0px;
+    width: 40%;
+    border-radius: 10px;
+    border: none;
+    background: #b3b1b1;
+    color: #393838;
+    text-transform: uppercase;
+}
+
+button.db-btc-sent-g {
+    padding: 10px 20px;
+    margin: 10px 0px;
+    width: 40%;
+    border-radius: 10px;
+    border: none;
+    background: green;
+    color: #e5e5e5;
+    text-transform: uppercase;
+}
+
+.db-select-plan {
+    background: #121212;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 10px;
+    color: white!important;
+    width: 100%;
+}
+.d-to-sec-bott {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.d-to-sec-mid {
+    margin: 10px 0px;
+    text-align: center;
+    font-size: x-large;
+}
+@media screen 
+and (min-device-width: 1200px) 
+and (max-device-width: 1600px) 
+and (-webkit-min-device-pixel-ratio: 1) { 
+  .dashboard {
+      padding: 20px;
+      width: 100%;
+      margin: auto;
+  }
+  .db-btc_address {
+    overflow-y: hidden; /* Hide vertical scrollbar */
+    overflow-x: hidden;
+    border: 1px solid #059418;
+    color: #059418;
+    padding: 20px;
+    border-radius: 10px;
+    font-size: small;
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none; 
+    cursor: pointer;
+}
+}
